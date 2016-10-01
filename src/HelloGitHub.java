@@ -14,9 +14,9 @@ public class HelloGitHub {
 		System.out.println("Bitte zahl 2 eingeben:");
 		int z2 = scanner.nextInt();
 		
-		int teiler = testcalc(z1, z2);
-		System.out.println("ggt:"+teiler);
-		
+		//int teiler = testcalc(z1, z2);
+		//System.out.println("ggt:"+teiler);
+		output(z1, z2);
 //		System.out.println();
 	}
 	
@@ -29,6 +29,20 @@ public class HelloGitHub {
 		    }
 		   return z1;
 
+	}
+	
+	private static void output(int z1, int z2) {
+		int plus = z1+z2;
+		int minus=z1-z2;
+		int mal=z1*z2;
+		int divis = z1/z2;
+		int modulo = z1%z2;
+		System.out.println(z1+"+"+z2+"="+plus);
+		System.out.println(z1+"-"+z2+"="+minus);
+		System.out.println(z1+"*"+z2+"="+mal);
+		System.out.println(z1+"/"+z2+"="+divis);
+		System.out.println(z1+"%"+z2+"="+modulo);
+		
 	}
 
 }
